@@ -205,7 +205,7 @@ theme.loadTreeSitter = function()
 		TSInclude = { fg = colors.orange }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
 		TSKeyword = { link = "Statement" }, -- For keywords that don't fall in previous categories.
 		TSKeywordFunction = { link = "Statement" }, -- For keywords used to define a fuction.
-		TSKeywordOperator = { fg = colors.purple }, -- Unary and binary operators that are English words: `and`, `or` in Python; `sizeof` in C.
+		TSKeywordOperator = { link = "Statement" }, -- Unary and binary operators that are English words: `and`, `or` in Python; `sizeof` in C.
 		TSKeywordReturn = { fg = colors.cyan }, -- return keyword
 		TSLabel = { fg = colors.red }, -- For labels: `label:` in C and `:label:` in Lua.
 		TSMethod = { link = "Function" }, -- For method calls and definitions.
