@@ -218,7 +218,7 @@ theme.loadTreeSitter = function()
 		TSPunctDelimiter = { fg = colors.cyan }, -- For delimiters ie: `.`
 		TSPunctBracket = { fg = colors.cyan }, -- For brackets and parens.
 		TSPunctSpecial = { fg = colors.cyan }, -- For special punctutation that does not fall in the catagories before.
-		TSRepeat = { link = "Keyword" }, -- For keywords related to loops.
+		TSRepeat = { fg = colors.gray }, -- For keywords related to loops.
 		TSString = { link = "String" }, -- For strings.
 		TSStringRegex = { fg = colors.yellow }, -- For regexes.
 		TSStringEscape = { fg = colors.text }, -- For escape characters within a string.
