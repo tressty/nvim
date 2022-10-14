@@ -18,9 +18,9 @@ theme.loadSyntax = function()
 		Number = { fg = colors.orange }, -- a number constant: 5
 		Boolean = { fg = colors.orange }, -- a boolean constant: TRUE, false
 		Float = { fg = colors.orange }, -- a floating point constant: 2.3e10
-		Function = { fg = colors.orange, italic = config.italics.functions }, -- italic funtion names
+		Function = { fg = colors.blue, italic = config.italics.functions }, -- italic funtion names
 		Identifier = { fg = colors.fg, italic = config.italics.variables }, -- any variable name
-		Statement = { fg = colors.cyan }, -- any statement
+		Statement = { fg = colors.orange }, -- any statement
 		Keyword = { fg = colors.purple, italic = config.italics.keywords }, -- italic for, do, while, etc.
 		Label = { fg = colors.purple }, -- case, default, etc.
 		Operator = { fg = colors.cyan }, -- sizeof", "+", "*", etc.
@@ -199,7 +199,7 @@ theme.loadTreeSitter = function()
 		TSException = { fg = colors.red }, -- For exception related keywords.
 		TSField = { fg = colors.fg }, -- For fields.
 		TSFloat = { fg = colors.orange }, -- For floats.
-		TSFunction = { fg = colors.orange }, -- For fuction (calls and definitions).
+		TSFunction = { link = "Function" }, -- For fuction (calls and definitions).
 		TSFuncBuiltin = { link = "Function" }, -- For builtin functions: `table.insert` in Lua.
 		TSFuncMacro = { fg = colors.blue }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
 		TSInclude = { fg = colors.orange }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
