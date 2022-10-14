@@ -21,7 +21,7 @@ theme.loadSyntax = function()
 		Function = { fg = colors.blue, italic = config.italics.functions }, -- italic funtion names
 		Identifier = { fg = colors.fg, italic = config.italics.variables }, -- any variable name
 		Statement = { fg = colors.orange }, -- any statement
-		Keyword = { fg = colors.purple, italic = config.italics.keywords }, -- italic for, do, while, etc.
+		Keyword = { fg = colors.orange, italic = config.italics.keywords }, -- italic for, do, while, etc.
 		Label = { fg = colors.purple }, -- case, default, etc.
 		Operator = { fg = colors.cyan }, -- sizeof", "+", "*", etc.
 		Exception = { fg = colors.red }, -- try, catch, throw
@@ -190,7 +190,7 @@ theme.loadTreeSitter = function()
 		TSBoolean = { link = "Boolean" }, -- For booleans.
 		TSCharacter = { link = "Character" }, -- For characters.
 		TSComment = { link = "Comment" }, -- For comment blocks.
-		TSConditional = { link = "Keyword" }, -- For keywords related to conditionnals.
+		TSConditional = { link = "Keyword" }, -- For keywords related to conditionals.
 		TSConstructor = { fg = colors.blue }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
 		TSConstant = { link = "Constant" }, -- For constants
 		TSConstBuiltin = { fg = colors.orange }, -- For constant that are built in the language: `nil` in Lua.
