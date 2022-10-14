@@ -18,7 +18,7 @@ theme.loadSyntax = function ()
 		Number =					{ fg = colors.orange }, -- a number constant: 5
 		Boolean =					{ fg = colors.orange }, -- a boolean constant: TRUE, false
 		Float =						{ fg = colors.orange }, -- a floating point constant: 2.3e10
-		Function =					{ fg = colors.blue, italic = config.italics.functions }, -- italic funtion names
+		Function =					{ fg = colors.orange, italic = config.italics.functions }, -- italic funtion names
 		Identifier =				{ fg = colors.fg, italic = config.italics.variables }; -- any variable name
 		Statement =					{ fg = colors.cyan }, -- any statement
 		Keyword =					{ fg = colors.purple, italic = config.italics.keywords }, -- italic for, do, while, etc.
