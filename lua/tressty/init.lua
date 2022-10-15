@@ -10,14 +10,14 @@
 --       \:\__\        \::/  /
 --        \/__/         \/__/
 --
--- Colorscheme name:        material.nvim
--- Description:             Colorscheme for NeoVim based on the material pallete
+-- Colorscheme name:        tressty.nvim
+-- Description:             Colorscheme for NeoVim based on the tressty pallete
 -- Author:                  Marko Cerovac <marko.cerovac16@gmail.com>
--- Website:                 https://github.com/marko-cerovac/material.nvim
+-- Website:                 https://github.com/marko-cerovac/tressty.nvim
 
 -- Load the theme with user configuration
 local setup = function (options)
-	require('material.config').setup(options)
+	require('tressty.config').setup(options)
 end
 
 return { setup = setup }

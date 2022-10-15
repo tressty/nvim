@@ -1,28 +1,28 @@
 ================================================================================
-                                                                 *material.nvim*
+                                                                 *tressty.nvim*
               __          _      __           _      ~
   __ _  ___ _/ /____ ____(_)__ _/ / ___ _  __(_)_ _  ~
  /  ' \/ _ `/ __/ -_) __/ / _ `/ / / _ \ |/ / /  ' \ ~
 /_/_/_/\_,_/\__/\__/_/ /_/\_,_/_(_)_//_/___/_/_/_/_/ ~
                                                                                                                     
 
-Material.nvim is a colorscheme for NeoVim written in Lua with built in support
+tressty.nvim is a colorscheme for NeoVim written in Lua with built in support
 for native LSP, TreeSitter and many more plugins.
 
 ================================================================================
 CONTENTS
 
-    1. Features ................. |material-features|
-    2. Usage .................... |material-usage|
-    3. Styles ................... |material-styles|
-    4. Configuration ............ |material-configuration|
-    5. Examples ................. |material-examples|
-    6. Lualine setup ............ |material-lualine-setup|
-    7. Functions ................ |material-functions|
-    8. Mappings ................. |material-mappings|
+    1. Features ................. |tressty-features|
+    2. Usage .................... |tressty-usage|
+    3. Styles ................... |tressty-styles|
+    4. Configuration ............ |tressty-configuration|
+    5. Examples ................. |tressty-examples|
+    6. Lualine setup ............ |tressty-lualine-setup|
+    7. Functions ................ |tressty-functions|
+    8. Mappings ................. |tressty-mappings|
 
 ================================================================================
-1. Features                                             *material-features*
+1. Features                                             *tressty-features*
 
     + There are 5 styles to choose from: -oceanic
                                          -deep ocean
@@ -61,19 +61,19 @@ CONTENTS
       NeoVim
 
 ================================================================================
-2. Usage                                                   *material-usage*
+2. Usage                                                   *tressty-usage*
 
     To use the default settings, just apply the theme
 
     If you are using Vim-Script:
-        colorscheme material~
+        colorscheme tressty~
 
     If you are using Lua:
-        vim.cmd 'colorscheme material'~
+        vim.cmd 'colorscheme tressty'~
 
 
 ================================================================================
-3. Styles                                                 *material-styles*
+3. Styles                                                 *tressty-styles*
 
     The theme comes in 5 styles to choose from
 
@@ -88,7 +88,7 @@ CONTENTS
 
     + Palenight:~
         This style is based on the Palenight color theme, but with the
-        material color palette applied to it. It has a blueish gray background
+        tressty color palette applied to it. It has a blueish gray background
         and a purple accent color.
 
     + Darker:~
@@ -101,22 +101,22 @@ CONTENTS
         contrast, but there is an option to increase the contrast of this
         style for those that want more visibilty.
 
-    The styles are set by setting the global variable 'material_style' to the
+    The styles are set by setting the global variable 'tressty_style' to the
     desired style name
     
     For example:
 
         Vim-Script:
-            let g:material_style = "palenight"~
+            let g:tressty_style = "palenight"~
         Lua:
-            vim.g.material_style = "deep ocean"~
+            vim.g.tressty_style = "deep ocean"~
 
     Just make sure to set the style before applying the colorscheme
 
 ================================================================================
-4. Configuration                                   *material-configuration*
+4. Configuration                                   *tressty-configuration*
 
-What sets material.nvim apart from most Vim/NeoVim themes is the wide array
+What sets tressty.nvim apart from most Vim/NeoVim themes is the wide array
 of options for customising the theme.
 
 In order for these settings to take effect, they should be placed in your
@@ -124,9 +124,9 @@ init.vim/init.lua before applying the colorscheme
 
 Options:
 
-The theme style is set using a global variable called material_style
+The theme style is set using a global variable called tressty_style
 
-    + g:material_style {string} (default = "oceanic")
+    + g:tressty_style {string} (default = "oceanic")
         This sets the style of the the theme, and can be initialized with one
         of these five values: -oceanic
                               -deep ocean
@@ -136,11 +136,11 @@ The theme style is set using a global variable called material_style
 
 All other options are passed to a setup function
 
-    + require('material').setup()
+    + require('tressty').setup()
 
 This is an example of the setup function with the default values:
 
-    require('material').setup({
+    require('tressty').setup({
         contrast = {
             sidebars = false,
             floating_windows = false,
@@ -238,15 +238,15 @@ This is an example of the setup function with the default values:
           the highlights for it, you can disable it in this table.
 
 ================================================================================
-5. Examples                                         *material-examples*
+5. Examples                                         *tressty-examples*
 
 Example config in Lua:
 
     -- Theme style
-    vim.g.material_style = 'deep ocean'
+    vim.g.tressty_style = 'deep ocean'
 
     -- Colorscheme settings
-    require('material').setup({
+    require('tressty').setup({
         contrast = {
             sidebars = true,
             floating_windows = false,
@@ -275,11 +275,11 @@ Example config in Lua:
     })
 
     -- Apply the colorscheme
-    vim.cmd 'colorscheme material'
+    vim.cmd 'colorscheme tressty'
 
 If you want to use the custom_highlights table, this is how you would use it:
 
-require('material').setup({
+require('tressty').setup({
     ...
     custom_highlights = {
         Function = { fg = "#00FF00", bg = "#FF0000", italic = true },
@@ -292,17 +292,17 @@ Just put the name of the highlight group as the name of a table, and pass in
 the values for fg, bg, gui, guisp
 
 ================================================================================
-6. Lualine setup                                   *material-lualine-setup*
+6. Lualine setup                                   *tressty-lualine-setup*
 
     To enable the lualine themes, first set the theme
-    in your lualine settings to `auto` or `material`
+    in your lualine settings to `auto` or `tressty`
 
         require('lualine').setup {~
           options = {~
             -- ... your lualine config
             theme = 'auto'~
             or
-            theme = 'material'~
+            theme = 'tressty'~
             -- ... your lualine config
           }~
         }~
@@ -310,52 +310,52 @@ the values for fg, bg, gui, guisp
     Then, choose the style trough a variable called lualine_style
     in the theme setup function
 
-    require('material').setup({~
+    require('tressty').setup({~
         lualine_style = 'default' -- the default style
         or
         lualine_style = 'stealth' -- the stealth style
     })~
 
-    If the theme, doesn't look right, it's probably because material.nvim
-    is being loaded before lualine, causing the other material theme
+    If the theme, doesn't look right, it's probably because tressty.nvim
+    is being loaded before lualine, causing the other tressty theme
     that comes built-in to lualine to be used.
-    To fix this, either load material.nvim after lualine (preferred way)
+    To fix this, either load tressty.nvim after lualine (preferred way)
     or set the lualine theme to one of these two values in your lualine settings
 
     require('lualine').setup {~
       options = {~
         -- ... your lualine config
-        theme = 'material-nvim' -- the default style
+        theme = 'tressty-nvim' -- the default style
         or
-        theme = 'material-stealth' -- the stealth style
+        theme = 'tressty-stealth' -- the stealth style
         -- ... your lualine config
       }~
     }~
 
 ================================================================================
-7. Functions                                           *material-functions*
+7. Functions                                           *tressty-functions*
 
-Material.nvim has built in functions that you can call or bind to a key
+tressty.nvim has built in functions that you can call or bind to a key
 
     + Use telescope.nvim to switch to a style
-          :lua require("material.functions").find_style()~
+          :lua require("tressty.functions").find_style()~
 
     + Cycle trough styles without the need to restart NeoVim
           Just call the funciton and it will switch to the next style:
-          :lua require('material.functions').toggle_style()~
+          :lua require('tressty.functions').toggle_style()~
 
     + Switch to a specific style
           Call the function for switching and pass in the name of the style
           that you want to switch to:
-          :lua require('material.functions').change_style('palenight')~
+          :lua require('tressty.functions').change_style('palenight')~
 
     + Toggle the end of buffer lines
           Call this function if you want to toggle the visibility of the lines at the end of
           the buffer: 
-          :lua require('material.functions').toggle_eob()~
+          :lua require('tressty.functions').toggle_eob()~
 
 ================================================================================
-8. Mappings                                             *material-mappings*
+8. Mappings                                             *tressty-mappings*
 
 You can map the built-in functions to keys
 This will allow you to change the style and toggle the end-of-buffer lines
@@ -363,14 +363,14 @@ at keypress
 
 Example:
 
-nnoremap <leader>mf :lua require('material.functions').find_style()<CR>
+nnoremap <leader>mf :lua require('tressty.functions').find_style()<CR>
 
-nnoremap <leader>mm :lua require('material.functions').toggle_style()<CR>
+nnoremap <leader>mm :lua require('tressty.functions').toggle_style()<CR>
 
-nnoremap <leader>me :lua require('material.functions').toggle_eob()<CR>
+nnoremap <leader>me :lua require('tressty.functions').toggle_eob()<CR>
 
-nnoremap <leader>md :lua require('material.functions').change_style('darker')<CR>
-nnoremap <leader>ml :lua require('material.functions').change_style('lighter')<CR>
+nnoremap <leader>md :lua require('tressty.functions').change_style('darker')<CR>
+nnoremap <leader>ml :lua require('tressty.functions').change_style('lighter')<CR>
 
 ================================================================================
 vim:tw=78:ts=4:ft=help:norl:

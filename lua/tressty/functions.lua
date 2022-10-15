@@ -1,8 +1,8 @@
-local config = require('material.config').options
+local config = require('tressty.config').options
 
 -- Define style_switch
-if vim.g.material_style_switch == nil then
-    vim.g.material_style_switch = 0
+if vim.g.tressty_style_switch == nil then
+    vim.g.tressty_style_switch = 0
 end
 
 local set_lualine = function ()
@@ -19,16 +19,16 @@ end
 -- Change_style takes a style name as a parameter and switches to that style
 local change_style = function (style)
 	set_lualine()
-	vim.g.material_style = style
-	print("Material style: ", style)
-	vim.cmd "colorscheme material"
+	vim.g.tressty_style = style
+	print("tressty style: ", style)
+	vim.cmd "colorscheme tressty"
  end
 
 -- Toggle_style takes no parameters toggles the style on every function call
 local toggle_style = function ()
 	local switch = { "darker", "lighter", "palenight", "oceanic", "deep ocean" }
-	vim.g.material_style_switch = (vim.g.material_style_switch % table.getn(switch)) + 1
-	change_style(switch[vim.g.material_style_switch])
+	vim.g.tressty_style_switch = (vim.g.tressty_style_switch % table.getn(switch)) + 1
+	change_style(switch[vim.g.tressty_style_switch])
 end
 
 local toggle_eob = function ()
@@ -38,12 +38,12 @@ local toggle_eob = function ()
 		config.disable.eob_lines = true
 	end
 
-	local editor = require("material.theme").loadEditor()
-	require("material.util").highlight( "EndOfBuffer", editor.EndOfBuffer)
+	local editor = require("tressty.theme").loadEditor()
+	require("tressty.util").highlight( "EndOfBuffer", editor.EndOfBuffer)
 end
 
 local find_style = function ()
-	require "material.telescope_switcher".find()
+	require "tressty.telescope_switcher".find()
 end
 
 return {

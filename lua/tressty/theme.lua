@@ -1,5 +1,5 @@
-local colors = require("material.colors")
-local config = require("material.config").options
+local colors = require("tressty.colors")
+local config = require("tressty.config").options
 
 local theme = {}
 

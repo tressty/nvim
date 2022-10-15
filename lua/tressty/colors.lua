@@ -2,7 +2,7 @@
 -- the basic colors of the theme
 -- and the style specific colors
 
-local config = require('material.config').options
+local config = require('tressty.config').options
 
 local colors = {
 	-- Common colors
@@ -39,7 +39,7 @@ local colors = {
 
 -- Style specific colors
 
-if vim.g.material_style == 'darker' then
+if vim.g.tressty_style == 'darker' then
 	-- Darker theme style
 
 	if config.high_visibility.darker == true then
@@ -68,7 +68,7 @@ if vim.g.material_style == 'darker' then
     colors.accent =			'#FF9800'
 
 
-elseif vim.g.material_style == 'lighter' then
+elseif vim.g.tressty_style == 'lighter' then
 	-- Lighter theme style
 
 	if config.high_visibility.lighter == true then
@@ -128,7 +128,7 @@ elseif vim.g.material_style == 'lighter' then
     colors.title = colors.black
 
 
-elseif vim.g.material_style == 'palenight' then
+elseif vim.g.tressty_style == 'palenight' then
 	-- Palenight theme style
 
 	colors.bg =				'#292D3E'
@@ -145,7 +145,7 @@ elseif vim.g.material_style == 'palenight' then
 	colors.disabled =		'#515772'
 	colors.accent =			'#AB47BC'
 
-elseif vim.g.material_style == 'deep ocean' then
+elseif vim.g.tressty_style == 'deep ocean' then
 	-- Deep Ocean theme style
 
 	colors.bg =				'#0F111A'
@@ -162,7 +162,7 @@ elseif vim.g.material_style == 'deep ocean' then
 	colors.disabled =		'#464B5D'
 	colors.accent =			'#84FFFF'
 
-else vim.g.material_style = 'oceanic'
+else vim.g.tressty_style = 'oceanic'
 	-- Oceanic theme style
 
 	colors.bg =				'#263238'

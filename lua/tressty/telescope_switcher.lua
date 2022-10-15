@@ -16,8 +16,8 @@ local center_prompt = {
 
 local function enter(prompt_bufnr)
 	local selected = action_state.get_selected_entry()
-	vim.g.material_style = selected[1]
-	vim.cmd "colorscheme material"
+	vim.g.tressty_style = selected[1]
+	vim.cmd "colorscheme tressty"
 	actions.close(prompt_bufnr)
 end
 
@@ -29,7 +29,7 @@ local opts = {
 		"oceanic",
 		"palenight"
 	},
-	prompt_title = "Material",
+	prompt_title = "tressty",
 	results_title = "styles",
 	sorter = sorters.get_fzy_sorter({}),
 	borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },

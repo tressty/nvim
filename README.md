@@ -91,12 +91,12 @@ added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) an
 Install via your favourite package manager:
 ```vim
 " If you are using Vim-Plug
-Plug 'marko-cerovac/material.nvim'
+Plug 'trard/tressty.nvim'
 ```
 
 ```lua
 -- If you are using Packer
-use 'marko-cerovac/material.nvim'
+use 'trard/tressty.nvim'
 ```
 
 ## 🐬 Usage
@@ -104,16 +104,16 @@ use 'marko-cerovac/material.nvim'
 Enable the colorscheme:
 ```vim
 "Vim-Script:
-colorscheme material
+colorscheme tressty
 ```
 
 ```lua
 --Lua:
-vim.cmd 'colorscheme material'
+vim.cmd 'colorscheme tressty'
 ```
 
 
-For a comlete guide on usage and configuration of the theme, see ```:help material.nvim```.
+For a comlete guide on usage and configuration of the theme, see ```:help tressty.nvim```.
 
 ## ⚙️ Configuration
 
@@ -127,24 +127,24 @@ For a comlete guide on usage and configuration of the theme, see ```:help materi
 Set the desired style using:
 ```vim
 "Vim-Script:
-let g:material_style = "darker"
+let g:tressty_style = "darker"
 ```
 
 ```lua
 --Lua:
-vim.g.material_style = "deep ocean"
+vim.g.tressty_style = "deep ocean"
 ```
 
 The configuration of different options is done trough a setup function
 ```vim
 lua << EOF
-require('material').setup()
+require('tressty').setup()
 EOF
 ```
 
 This is an example of the function with the default values
 ```lua
-require('material').setup({
+require('tressty').setup({
 
     contrast = {
         sidebars = false, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
@@ -212,16 +212,16 @@ require('material').setup({
 After passing the configuration to a setup function, make sure to enable the colorscheme:
 
 ```vim
-colorscheme material
+colorscheme tressty
 ```
 
 ```lua
-vim.cmd 'colorscheme material'
+vim.cmd 'colorscheme tressty'
 ```
 
 This is an example of overwriting the default highlights (most users will never need to do this)
 ```lua
-require('material').setup{
+require('tressty').setup{
     custom_highlights = {
         LineNr = { bg = '#FF0000' }
         CursorLine = { fg = '#0000FF', underline = true },
@@ -245,38 +245,38 @@ require('material').setup{
 }
 ```
 
-To enable the lualine themes, first set the theme in your lualine settings to `auto` or `material`
+To enable the lualine themes, first set the theme in your lualine settings to `auto` or `tressty`
 ```lua
 require('lualine').setup {
   options = {
     -- ... your lualine config
     theme = 'auto'
     or
-    theme = 'material'
+    theme = 'tressty'
     -- ... your lualine config
   }
 }
 ```
 Then, choose the style trough a variable called ```lualine_style``` in the theme setup function
 ```lua
-require('material').setup({
+require('tressty').setup({
     lualine_style = 'default' -- the default style
     or
     lualine_style = 'stealth' -- the stealth style
 })
 ```
 
-If the theme, doesn't look right, it's probably because material.nvim is being loaded before lualine,
-causing the other material theme that comes built-in to lualine to be used.
-To fix this, either load material.nvim after lualine (preferred way)
+If the theme, doesn't look right, it's probably because tressty.nvim is being loaded before lualine,
+causing the other tressty theme that comes built-in to lualine to be used.
+To fix this, either load tressty.nvim after lualine (preferred way)
 or set the lualine theme to one of these two values in your lualine settings
 ```lua
 require('lualine').setup {
   options = {
     -- ... your lualine config
-    theme = 'material-nvim' -- the default style
+    theme = 'tressty-nvim' -- the default style
     or
-    theme = 'material-stealth' -- the stealth style
+    theme = 'tressty-stealth' -- the stealth style
     -- ... your lualine config
   }
 }
@@ -288,23 +288,23 @@ require('lualine').setup {
 
 ![telescope_finder](https://user-images.githubusercontent.com/76592799/191139931-579be597-f176-4dd4-af52-eb2c496c3607.png)
 ```vim
-:lua require("material.functions").find_style()
+:lua require("tressty.functions").find_style()
 ```
 
 
 + Cycle trough styles
 ```vim
-:lua require('material.functions').toggle_style()
+:lua require('tressty.functions').toggle_style()
 ```
 
 
 + Toggle the end of buffer lines ( ~ )
 ```vim
-:lua require('material.functions').toggle_eob()
+:lua require('tressty.functions').toggle_eob()
 ```
 
 
 + Change the style to a desired one using the function change_style("desired style")
 ```vim
-:lua require('material.functions').change_style("palenight")
+:lua require('tressty.functions').change_style("palenight")
 ```

@@ -1,21 +1,21 @@
 local util = {}
-local material = require('material.theme')
-local config = require('material.config').options
+local tressty = require('tressty.theme')
+local config = require('tressty.config').options
 
--- Only define Material if it's the active colorshceme
+-- Only define tressty if it's the active colorshceme
 function util.onColorScheme()
-  if vim.g.colors_name ~= "material" then
-    vim.cmd [[autocmd! Material]]
-    vim.cmd [[augroup! Material]]
-	-- vim.api.nvim_del_augroup_by_name("Material")
+  if vim.g.colors_name ~= "tressty" then
+    vim.cmd [[autocmd! tressty]]
+    vim.cmd [[augroup! tressty]]
+	-- vim.api.nvim_del_augroup_by_name("tressty")
   end
 end
 
 -- Change the background for the terminal and packer windows
 util.contrast = function ()
-	local group = vim.api.nvim_create_augroup("Material", { clear = true })
+	local group = vim.api.nvim_create_augroup("tressty", { clear = true })
 	vim.api.nvim_create_autocmd("ColorScheme", { callback = function ()
-		require("material.util").onColorScheme()
+		require("tressty.util").onColorScheme()
 	end, group = group })
 
 	for _, sidebar in ipairs(config.contrast_filetypes) do
@@ -41,11 +41,11 @@ function util.load()
     if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end
     vim.opt.background = "dark"
     vim.opt.termguicolors = true
-    vim.g.colors_name = "material"
+    vim.g.colors_name = "tressty"
 
 	if config.disable.colored_cursor == false then
 		vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,a:Cursor/Cursor"
-		local exit_group = vim.api.nvim_create_augroup("MaterialExit", { clear = true })
+		local exit_group = vim.api.nvim_create_augroup("tresstyExit", { clear = true })
 		vim.api.nvim_create_autocmd("ExitPre", {
 			command = "autocmd ExitPre * set guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20",
 			group = exit_group
@@ -57,11 +57,11 @@ function util.load()
 
 	local function async_loader()
 		-- Import the table for plugins
-		local plugins = material.loadPlugins()
+		local plugins = tressty.loadPlugins()
 
 		-- Apply the terminal colors
 		if config.disable.term_colors == false then
-			material.loadTerminal()
+			tressty.loadTerminal()
 		end
 
 		-- Apply the plugin colors
@@ -96,10 +96,10 @@ function util.load()
 	end
 
     -- Import tables for the base, syntax, treesitter and lsp
-    local editor = material.loadEditor()
-    local syntax = material.loadSyntax()
-    local treesitter = material.loadTreeSitter()
-	local lsp = material.loadLSP()
+    local editor = tressty.loadEditor()
+    local syntax = tressty.loadSyntax()
+    local treesitter = tressty.loadTreeSitter()
+	local lsp = tressty.loadLSP()
 
 	-- Apply base colors
     for group, colors in pairs(editor) do
