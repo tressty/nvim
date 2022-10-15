@@ -226,7 +226,8 @@ theme.loadTreeSitter = function()
 		TSStrong = { fg = colors.paleblue, bold = true }, -- Text to be represented in bold.
 		TSType = { link = "Type" }, -- For types.
 		TSTypeBuiltin = { fg = colors.red }, -- For builtin types.
-		TSTag = { fg = colors.red }, -- Tags like html tag names.
+		TSTypeQualifier = { fg = colors.red }, -- mut, const, violate
+        TSTag = { fg = colors.red }, -- Tags like html tag names.
 		TSTagDelimiter = { fg = colors.cyan }, -- Tag delimiter like `<` `>` `/`
 		TSTagAttribute = { fg = colors.gray }, -- HTML tag attributes.
 		TSText = { fg = colors.fg }, -- For strings considered text in a markup language.
