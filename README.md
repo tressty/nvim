@@ -4,22 +4,18 @@
 </p>
 
 
-##  material.nvim
+## **tressty.nvim**
 
-![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
-![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
-
-
-The original [Material](https://material-theme.site) theme now available for [NeoVim](https://neovim.io/)
+Better than material.nvim
 
 ---
 
 </div>
 
 ## 🔱 Info
-A port of [Material](https://material-theme.site) colorscheme for NeoVim written in Lua
+Theme based on [Material theme](https://material-theme.site) for [NeoVim](https://neovim.io/) with prettier highlight written in Lua.
 
-Material.nvim is meant to be a fast and modern colorscheme written in Lua that supports a lot of the new features
+tressty.nvim is meant to be a fast and modern colorscheme written in Lua that supports a lot of the new features
 added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ## 🌊 Features
