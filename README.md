@@ -22,7 +22,8 @@ added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) an
 
 + 5 styles to choose from
 
-TODO: make screenshots
++ Deep ocean ![DeepOcean](https://raw.githubusercontent.com/Trard/additional_files/master/TresstyDeepOcean.png)
+
 <!-- 
     + Oceanic ![2022-04-18-01:21:38-screenshot](https://user-images.githubusercontent.com/76592799/163740712-493ff2e9-cd4f-41e0-b7cd-595b58924816.png)
 
