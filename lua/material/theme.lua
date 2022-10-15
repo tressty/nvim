@@ -7,13 +7,13 @@ theme.loadSyntax = function()
 	-- Syntax highlight groups
 
 	local syntax = {
-		Type = { fg = colors.purple }, -- int, long, char, etc.
+		Type = { fg = colors.yellow }, -- int, long, char, etc.
 		StorageClass = { fg = colors.cyan }, -- static, register, volatile, etc.
 		Structure = { fg = colors.purple }, -- struct, union, enum, etc.
 		Comment = { fg = colors.comments, italic = config.italics.comments }, -- italic comments
 		SpecialComment = { link = "Comment" }, -- special things inside a comment
 		Conditional = { fg = colors.purple, italic = config.italics.keywords }, -- italic if, then, else, endif, switch, etc.
-		Constant = { fg = colors.yellow }, -- any constant
+		Constant = { fg = colors.darkcyan }, -- enum, struct fields
 		Character = { fg = colors.orange }, -- any character constant: 'c', '\n'
 		Number = { fg = colors.orange }, -- a number constant: 5
 		Boolean = { fg = colors.orange }, -- a boolean constant: TRUE, false
@@ -202,14 +202,14 @@ theme.loadTreeSitter = function()
 		TSFunction = { link = "Function" }, -- For fuction (calls and definitions).
 		TSFuncBuiltin = { link = "Function" }, -- For builtin functions: `table.insert` in Lua.
 		TSFuncMacro = { fg = colors.blue }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
-		TSInclude = { fg = colors.orange }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
-		TSKeyword = { link = "Statement" }, -- For keywords that don't fall in previous categories.
-		TSKeywordFunction = { link = "Statement" }, -- For keywords used to define a fuction.
-		TSKeywordOperator = { link = "Statement" }, -- Unary and binary operators that are English words: `and`, `or` in Python; `sizeof` in C.
+		TSInclude = { link = "Keyword" }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
+		TSKeyword = { link = "Keyword" }, -- For keywords that don't fall in previous categories.
+		TSKeywordFunction = { link = "Keyword" }, -- For keywords used to define a fuction.
+		TSKeywordOperator = { link = "Keyword" }, -- Unary and binary operators that are English words: `and`, `or` in Python; `sizeof` in C.
 		TSKeywordReturn = { fg = colors.cyan }, -- return keyword
-		TSLabel = { fg = colors.red }, -- For labels: `label:` in C and `:label:` in Lua.
+		TSLabel = { fg = colors.purple }, -- For labels: `label:` in C and `:label:` in Lua.
 		TSMethod = { link = "Function" }, -- For method calls and definitions.
-		TSNamespace = { fg = colors.yellow }, -- For identifiers referring to modules and namespaces.
+		TSNamespace = { fg = colors.pink }, -- For identifiers referring to modules and namespaces.
 		TSNumber = { fg = colors.orange }, -- For all numbers
 		TSOperator = { fg = colors.cyan }, -- For any operator: `+`, but also `->` and `*` in C.
 		TSParameter = { fg = colors.paleblue }, -- For parameters of a function.
@@ -218,13 +218,13 @@ theme.loadTreeSitter = function()
 		TSPunctDelimiter = { fg = colors.cyan }, -- For delimiters ie: `.`
 		TSPunctBracket = { fg = colors.cyan }, -- For brackets and parens.
 		TSPunctSpecial = { fg = colors.cyan }, -- For special punctutation that does not fall in the catagories before.
-		TSRepeat = { fg = colors.gray }, -- For keywords related to loops.
+		TSRepeat = { fg = colors.cyan }, -- For keywords related to loops.
 		TSString = { link = "String" }, -- For strings.
 		TSStringRegex = { fg = colors.yellow }, -- For regexes.
 		TSStringEscape = { fg = colors.text }, -- For escape characters within a string.
-		TSSymbol = { fg = colors.yellow }, -- For identifiers referring to symbols or atoms.
+		TSSymbol = { link = "String" }, -- For identifiers referring to symbols or atoms.
 		TSStrong = { fg = colors.paleblue, bold = true }, -- Text to be represented in bold.
-		TSType = { fg = colors.purple }, -- For types.
+		TSType = { link = "Type" }, -- For types.
 		TSTypeBuiltin = { fg = colors.red }, -- For builtin types.
 		TSTag = { fg = colors.red }, -- Tags like html tag names.
 		TSTagDelimiter = { fg = colors.cyan }, -- Tag delimiter like `<` `>` `/`
@@ -232,7 +232,7 @@ theme.loadTreeSitter = function()
 		TSText = { fg = colors.fg }, -- For strings considered text in a markup language.
 		TSTextReference = { fg = colors.yellow }, -- FIXME
 		TSVariable = { link = "Identifier" }, -- Any variable name that does not have another highlight.
-		TSVariableBuiltin = { link = "Identifier" }, -- Variable names that are defined by the languages, like `this` or `self`.
+		TSVariableBuiltin = { fg = colors.red }, -- Variable names that are defined by the languages, like `this` or `self`.
 		TSEmphasis = { fg = colors.paleblue }, -- For text to be represented with emphasis.
 		TSUnderline = { fg = colors.fg, underline = true }, -- For text to be represented with an underline.
 		-- TSStrike =                  { fg = colors.fg,, strikethrough = true}, -- For strikethrough text.
