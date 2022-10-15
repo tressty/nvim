@@ -112,7 +112,7 @@ theme.loadEditor = function()
 		Title = { fg = colors.title, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
 		Visual = { fg = colors.none, bg = colors.selection }, -- Visual mode selection
 		VisualNOS = { link = "Visual" }, -- Visual mode selection when vim is "Not Owning the Selection".
-		WarningMsg = { fg = colors.yellow }, -- warning messages
+		WarningMsg = { fg = colors.darkyellow }, -- warning messages
 		Whitespace = { fg = colors.disabled }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
 		WildMenu = { fg = colors.orange, bold = true }, -- current match in 'wildmenu' completion
 		CursorLine = { fg = colors.none, bg = colors.bg_cur }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
@@ -257,11 +257,11 @@ theme.loadLSP = function()
 		DiagnosticFloatingError = { fg = colors.error },
 		DiagnosticSignError = { fg = colors.error },
 		DiagnosticUnderlineError = { undercurl = true, sp = colors.error },
-		DiagnosticWarn = { fg = colors.yellow },
-		DiagnosticVirtualTextWarn = { fg = colors.yellow },
-		DiagnosticFloatingWarn = { fg = colors.yellow },
-		DiagnosticSignWarn = { fg = colors.yellow },
-		DiagnosticUnderlineWarn = { undercurl = true, sp = colors.yellow },
+		DiagnosticWarn = { link = "WarningMsg" },
+		DiagnosticVirtualTextWarn = { link = "WarningMsg" },
+		DiagnosticFloatingWarn = { link = "WarningMsg" },
+		DiagnosticSignWarn = { link = "WarningMsg" },
+		DiagnosticUnderlineWarn = { undercurl = true, link = "WarningMsg" },
 		DiagnosticInformation = { fg = colors.paleblue },
 		DiagnosticVirtualTextInfo = { fg = colors.paleblue },
 		DiagnosticFloatingInfo = { fg = colors.paleblue },
