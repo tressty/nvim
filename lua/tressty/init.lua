@@ -1,19 +1,17 @@
---         ___           ___
---        /\  \         /\__\
---       |::\  \       /:/  /
---       |:|:\  \     /:/  /
---     __|:|\:\  \   /:/  /  ___
---    /::::|_\:\__\ /:/__/  /\__\
---    \:\~~\  \/__/ \:\  \ /:/  /
---     \:\  \        \:\  /:/  /
---      \:\  \        \:\/:/  /
---       \:\__\        \::/  /
---        \/__/         \/__/
+--
+--	   ____________
+--    |___________|
+--         |_|   /
+--         | |  /
+--        /| ../
+--       /.. |/
+--      /  | |
+--     /   |_|
 --
 -- Colorscheme name:        tressty.nvim
--- Description:             Colorscheme for NeoVim based on the tressty pallete
--- Author:                  Marko Cerovac <marko.cerovac16@gmail.com>
--- Website:                 https://github.com/marko-cerovac/tressty.nvim
+-- Description:             Colorscheme for NeoVim based on material.nvim
+-- Author:                  Eduard Baturin <trardone@gmail.com>
+-- Website:                 https://github.com/trard/tressty.nvim
 
 -- Load the theme with user configuration
 local setup = function (options)
