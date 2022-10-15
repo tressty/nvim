@@ -22,6 +22,8 @@ added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) an
 
 + 5 styles to choose from
 
+TODO: make screenshots
+<!-- 
     + Oceanic ![2022-04-18-01:21:38-screenshot](https://user-images.githubusercontent.com/76592799/163740712-493ff2e9-cd4f-41e0-b7cd-595b58924816.png)
 
     + Deep ocean ![2022-04-18-01:21:16-screenshot](https://user-images.githubusercontent.com/76592799/163740695-3c34201c-7ae4-482f-9548-53d08701bdd5.png)
@@ -31,7 +33,7 @@ added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) an
     + Lighter ![2022-04-18-01:21:28-screenshot](https://user-images.githubusercontent.com/76592799/163740732-bfb9bde2-f56b-48af-b8be-be8b1e18fef3.png)
 
     + Darker ![2022-04-18-01:21:22-screenshot](https://user-images.githubusercontent.com/76592799/163740743-02c243ae-512d-4707-b865-5261e09072dd.png)
-
+ -->
 
 
 + Supported plugins:
