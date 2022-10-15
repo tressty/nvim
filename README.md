@@ -13,7 +13,7 @@ Better than material.nvim
 </div>
 
 ## 🔱 Info
-Theme based on [Material theme](https://github.com/marko-cerovac/material.nvim) for [NeoVim](https://neovim.io/) with prettier highlight written in Lua.
+Theme based on [Material theme](https://github.com/marko-cerovac/material.nvim) for [NeoVim](https://neovim.io/) with prettier highlighting written in Lua.
 
 tressty.nvim is meant to be a fast and modern colorscheme written in Lua that supports a lot of the new features
 added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
