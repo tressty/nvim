@@ -16,7 +16,7 @@ local colors = {
 		notifications = "#090B10",
 		accent = "#84ffff",
 		excluded = "#292D3E",
-        none = "NONE"
+		none = "NONE",
 	},
 	general = {
 		green = "#C3E88D",
@@ -42,12 +42,12 @@ local colors = {
 		cantaloupe = "#fab49f",
 		pale_black = "#171825",
 		vermilion = "#ff5a49",
-        dark_yellow = "#dcac2c"
+		dark_yellow = "#dcac2c",
 	},
-    toxic = {
+	toxic = {
 		plum = "#9b117b",
 		crimson = "#d10020",
-    }
+	},
 }
 
 return colors
