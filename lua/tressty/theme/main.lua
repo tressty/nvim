@@ -3,7 +3,7 @@ local colors = require("tressty.colors")
 -- Main syntax highlight groups
 -- https://github.com/neovim/neovim/blob/master/runtime/doc/syntax.txt
 return {
-	Comment = { fg = colors.main.disabled },
+	Comment = { fg = colors.general.gray },
 
 	Constant = { fg = colors.general.turquoise },
 	String = { fg = colors.general.green },
@@ -21,7 +21,7 @@ return {
 	Label = { fg = colors.general.cyan },
 	Operator = { fg = colors.general.cyan },
 	Keyword = { fg = colors.general.orange },
-	Exception = { fg = colors.general.error },
+	Exception = { fg = colors.main.error },
 
 	PreProc = { fg = colors.general.purple },
 	Include = { fg = colors.general.orange },
@@ -42,8 +42,8 @@ return {
 	Debug = { fg = colors.general.magenta },
 
 	Underlined = { fg = colors.general.turquoise, underline = true },
-	Ignore = { fg = colors.main.disabled },
-	Error = { fg = colors.general.error },
+	Ignore = { fg = colors.general.gray },
+	Error = { fg = colors.main.error },
 	Todo = { fg = colors.main.foreground, bg = colors.additional.sand },
 
 	htmlLink = { link = "Underlined" },

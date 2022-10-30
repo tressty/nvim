@@ -4,7 +4,7 @@ local colors = require("tressty.colors")
 -- https://neovim.io/doc/user/syntax.html#highlight-groups
 return {
 	ColorColumn = { fg = colors.none, bg = colors.active },
-	Conceal = { fg = colors.main.disabled },
+	Conceal = { fg = colors.general.gray },
 	CurSearch = { fg = colors.main.active_foreground, bg = colors.main.active_background },
 
 	Cursor = { fg = colors.main.accent, bg = colors.general.white },
@@ -28,7 +28,7 @@ return {
 
 	WinSeparator = { fg = colors.main.border, bg = colors.main.border },
 
-	Folded = { fg = colors.main.disabled },
+	Folded = { fg = colors.general.gray },
 	FoldColumn = { fg = colors.general.blue },
 	SignColumn = { fg = colors.main.highlight },
 	IncSearch = { link = "CurSearch" },
