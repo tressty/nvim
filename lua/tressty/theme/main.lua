@@ -30,7 +30,7 @@ return {
 	PreCondit = { link = "Conditional" },
 
 	Type = { fg = colors.general.yellow },
-	StorageClass = { fg = colors.general.darkblue },
+	StorageClass = { fg = colors.general.purple },
 	Structure = { fg = colors.general.yellow },
 	Typedef = { fg = colors.general.orange },
 
