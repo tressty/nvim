@@ -3,7 +3,7 @@ local colors = require("tressty.colors")
 -- Diagnostic highlights
 -- https://neovim.io/doc/user/diagnostic.html
 return {
-	DiagnosticError = { fg = colors.general.error },
+	DiagnosticError = { link = "Error" },
 	DiagnosticWarn = { link = "WarningMsg" },
 	DiagnosticInfo = { fg = colors.additional.moon_light },
 	DiagnosticHint = { fg = colors.general.purple},
