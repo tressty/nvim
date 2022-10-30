@@ -34,7 +34,7 @@ return {
 	["@function"] = { link = "Function" },
 	["@function.builtin"] = { link = "@function" },
 	["@function.call"] = { link = "@function" },
-	["@function.macro"] = { fg = colors.additional.plum },
+	["@function.macro"] = { limk = "@function" },
 
 	["@method"] = { link = "@function" },
 	["@method.call"] = { link = "@method" },
