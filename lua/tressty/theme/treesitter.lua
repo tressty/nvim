@@ -70,7 +70,7 @@ return {
 	["@variable"] = { link = "Identifier" },
 	["@variable.builtin"] = { fg = colors.general.red },
 
-	["@constant"] = { fg = colors.general.gray }, -- see also https://github.com/nvim-treesitter/nvim-treesitter/issues/3610
+	["@constant"] = { fg = colors.additional.pale_turquoise }, -- see also https://github.com/nvim-treesitter/nvim-treesitter/issues/3610
 	["@constant.builtin"] = { fg = colors.general.cyan },
 	["@constant.macro"] = { link = "Macro" },
 
