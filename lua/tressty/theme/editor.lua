@@ -5,7 +5,7 @@ local colors = require("tressty.colors")
 return {
 	ColorColumn = { fg = colors.none, bg = colors.active },
 	Conceal = { fg = colors.main.disabled },
-	CurSearch = { fg = colors.main.accent, bg = colors.main.active_background },
+	CurSearch = { fg = colors.main.active_foreground, bg = colors.main.active_background },
 
 	Cursor = { fg = colors.main.accent, bg = colors.general.white },
 	lCursor = { link = "Cursor" },
@@ -72,6 +72,16 @@ return {
 	StatusLine = { fg = colors.main.foreground, bg = colors.main.background },
 	StatusLineNC = { fg = colors.main.foreground, bg = colors.main.second_background },
 
+    TabLine = { bg = colors.main.buttons },
+    TabLineFill = { bg = colors.main.background },
+    TabLineSel = { bg = colors.main.buttons, fg = colors.additional.moon_light },
+
+    Title = { fg = colors.general.white },
+    Visual = { bg = colors.main.active_background },
+    VisualNOS = { link = "VisualNOS" },
+
     WarningMsg = { fg = colors.main.warning },
 
+    Whitespace = { link = "NonText" },
+    WildMenu = { fg = colors.additional.moon_light },
 }
