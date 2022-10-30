@@ -7,7 +7,7 @@ return {
 	Conceal = { fg = colors.general.gray },
 	CurSearch = { fg = colors.main.active_foreground, bg = colors.main.active_background },
 
-	Cursor = { fg = colors.main.accent, bg = colors.main.accent, sp = colors.main.accent },
+	Cursor = { fg = colors.general.white, bg = colors.general.white },
 	lCursor = { link = "Cursor" },
 	CursorIM = { link = "Cursor" },
 	CursorColumn = { link = "Cursor" },
