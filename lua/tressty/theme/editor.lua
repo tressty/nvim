@@ -50,7 +50,7 @@ return {
 	NonText = { fg = colors.main.highlight },
 
 	Normal = { fg = colors.main.foreground, bg = colors.main.background },
-	NormalFloat = { fg = colors.main.foreground, bg = colors.main.second_background },
+	NormalFloat = { bg = colors.main.border },
 	NormalNC = { fg = colors.main.foreground, bg = colors.main.background },
 	Pmenu = { bg = colors.main.second_background },
 	PmenuSel = { bg = colors.main.highlight },
