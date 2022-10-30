@@ -82,7 +82,7 @@ return {
 	["@text.strong"] = { link = "@text", bold = true },
 	["@text.emphasis"] = { fg = colors.additional.moon_light },
 	["@text.underline"] = { link = "@text", underline = true },
-	["@text.strike"] = { link = "@text" }, -- How to do this???
+	["@text.strike"] = { link = "@text", strikethrough = true },
 	["@text.title"] = { fg = colors.general.white },
 	["@text.literal"] = { fg = colors.general.yellow },
 	["@text.uri"] = { link = "Underlined" },
