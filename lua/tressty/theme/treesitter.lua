@@ -100,4 +100,10 @@ return {
 	["@tag"] = { fg = colors.general.orange },
 	["@tag.attribute"] = { fg = colors.general.green },
 	["@tag.delimiter"] = { fg = colors.general.cyan },
+
+    -- Conceal
+    ["@conceal"] = { link = "Conceal" },
+
+    -- Spell
+    ["@spell"] = { link = "Normal" }
 }
