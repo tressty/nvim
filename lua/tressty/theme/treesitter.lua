@@ -6,24 +6,25 @@ return {
 	-- Misc
 	["@comment"] = { link = "Comment" },
 	["@error"] = { link = "Error" },
-	["@none"] = { fg = colors.none },
+	["@none"] = { fg = "NONE" },
 	["@preproc"] = { link = "PreProc" },
 	["@define"] = { link = "Define" },
 	["operator"] = { link = "Operator" },
 
 	-- Punctuation
-	["@punctuation.delimiter"] = { fg = colors.cyan },
-	["@punctuation.bracket"] = { fg = colors.cyan },
-	["@punctuation.special"] = { fg = colors.cyan },
+	["@punctuation.delimiter"] = { link = "Delimiter" },
+
+	["@punctuation.bracket"] = { fg = colors.general.cyan },
+	["@punctuation.special"] = { fg = colors.general.cyan },
 
 	-- Literals
 	["@string"] = { link = "String" },
-	["@string.regex"] = { fg = colors.cyan },
-	["@string.escape"] = { fg = colors.text },
-	["@string.special"] = { fg = colors.yellow },
+	["@string.regex"] = { fg = colors.general.cyan },
+	["@string.escape"] = { fg = colors.general.gray, bg = colors.additional.pale_green },
+	["@string.special"] = { fg = colors.additional.cantaloupe },
 
 	["@character"] = { link = "Character" },
-	["@character.special"] = { fg = colors.cyan },
+	["@character.special"] = { link = "SpecialChar" },
 
 	["@boolean"] = { link = "Boolean" },
 	["@number"] = { link = "Number" },
@@ -33,13 +34,13 @@ return {
 	["@function"] = { link = "Function" },
 	["@function.builtin"] = { link = "@function" },
 	["@function.call"] = { link = "@function" },
-	["@function.macro"] = { fg = colors.darkpurple },
+	["@function.macro"] = { fg = colors.additional.plum },
 
 	["@method"] = { link = "@function" },
 	["@method.call"] = { link = "@method" },
 
 	["@constructor"] = { link = "@function" },
-	["@parameter"] = { fg = colors.paleblue },
+	["@parameter"] = { fg = colors.additional.moon_light },
 
 	-- Keywords
 	["@keyword"] = { link = "Keyword" },
@@ -56,49 +57,47 @@ return {
 
 	-- Types
 	["@type"] = { link = "Type" },
-	["@type.builtin"] = { fg = colors.red },
+	["@type.builtin"] = { fg = colors.general.red },
 	["@type.definition"] = { link = "@keyword" },
-	["@type.qualifier"] = { fg = colors.red },
+	["@type.qualifier"] = { fg = colors.general.red },
 
-	["@storageclass"] = { fg = colors.purple },
-	["@attribute"] = { fg = colors.cyan },
+	["@storageclass"] = { fg = colors.general.purple },
+	["@attribute"] = { fg = colors.general.cyan },
 	["@field"] = { fg = colors.fg },
 	["@property"] = { link = "@field" },
 
 	-- Identifiers
 	["@variable"] = { link = "Identifier" },
-	["@variable.builtin"] = { fg = colors.red },
+	["@variable.builtin"] = { fg = colors.general.red },
 
-	["@constant"] = { fg = colors.darkcyan }, -- see also https://github.com/nvim-treesitter/nvim-treesitter/issues/3610
-	["@constant.builtin"] = { fg = colors.cyan },
+	["@constant"] = { fg = colors.general.gray }, -- see also https://github.com/nvim-treesitter/nvim-treesitter/issues/3610
+	["@constant.builtin"] = { fg = colors.general.cyan },
 	["@constant.macro"] = { link = "Macro" },
 
-	["@namespace"] = { fg = colors.pink },
+	["@namespace"] = { fg = colors.general.pink },
 	["@symbol"] = { link = "@reference" },
 
 	-- Text
-	["@text"] = { fg = colors.fg },
+	["@text"] = { fg = colors.main.fg },
 	["@text.strong"] = { link = "@text", bold = true },
-	["@text.emphasis"] = { fg = colors.paleblue },
+	["@text.emphasis"] = { fg = colors.additional.moon_light },
 	["@text.underline"] = { link = "@text", underline = true },
-	["@text.strike"] = { link = "@text" }, -- How to do this???
-	["@text.title"] = { fg = colors.title },
-	["@text.literal"] = { fg = colors.yellow },
-	["@text.uri"] = { fg = colors.link },
-	["@text.math"] = { fg = colors.yellow },
-	["@text.environment"] = { fg = colors.green },
-	["@text.environment.name"] = { fg = colors.red },
-	["@text.reference"] = { fg = colors.fg, italic = true },
+	["@text.strike"] = { link = "@text", strikethrough = true },
+	["@text.title"] = { fg = colors.general.white },
+	["@text.literal"] = { fg = colors.general.yellow },
+	["@text.uri"] = { link = "Underlined" },
+	["@text.math"] = { fg = colors.general.yellow },
+	["@text.environment"] = { fg = colors.general.green },
+	["@text.environment.name"] = { fg = colors.general.red },
+	["@text.reference"] = { fg = colors.main.foreground, italic = true },
 
 	["@text.todo"] = { link = "Todo" },
-	["@text.note"] = { fg = colors.paleblue },
+	["@text.note"] = { fg = colors.additional.moon_light },
 	["@text.warning"] = { link = "WarningMsg" },
-	["@text.danger"] = { fg = colors.fg, bg = colors.darkred },
+	["@text.danger"] = { fg = colors.main.foreground, bg = colors.general.error },
 
 	-- Tags
-	["@tag"] = { fg = colors.orange },
-	["@tag.attribute"] = { fg = colors.green },
-	["@tag.delimiter"] = { fg = colors.cyan },
-
-	--
+	["@tag"] = { fg = colors.general.orange },
+	["@tag.attribute"] = { fg = colors.general.green },
+	["@tag.delimiter"] = { fg = colors.general.cyan },
 }
