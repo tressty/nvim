@@ -34,7 +34,7 @@ return {
 	["@function"] = { link = "Function" },
 	["@function.builtin"] = { link = "@function" },
 	["@function.call"] = { link = "@function" },
-	["@function.macro"] = { limk = "@function" },
+	["@function.macro"] = { link = "@function" },
 
 	["@method"] = { link = "@function" },
 	["@method.call"] = { link = "@method" },
