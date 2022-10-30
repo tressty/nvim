@@ -103,7 +103,4 @@ return {
 
     -- Conceal
     ["@conceal"] = { link = "Conceal" },
-
-    -- Spell
-    ["@spell"] = { link = "Normal" }
 }
