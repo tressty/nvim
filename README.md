@@ -47,5 +47,3 @@ Vim-Script:
 ```vim
 colorscheme tressty
 ```
-
-For a complete guide on usage and configuration of the theme, see ```:help tressty.nvim```.
