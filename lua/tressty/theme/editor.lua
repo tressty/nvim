@@ -7,7 +7,7 @@ return {
 	Conceal = { fg = colors.general.gray },
 	CurSearch = { fg = colors.main.active_foreground, bg = colors.main.active_background },
 
-	Cursor = { fg = colors.main.accent, bg = colors.general.white },
+	Cursor = { fg = colors.main.accent, bg = colors.main.accent, sp = colors.main.accent },
 	lCursor = { link = "Cursor" },
 	CursorIM = { link = "Cursor" },
 	CursorColumn = { link = "Cursor" },
@@ -78,7 +78,7 @@ return {
 
     Title = { fg = colors.general.white },
     Visual = { bg = colors.main.active_background },
-    VisualNOS = { link = "VisualNOS" },
+    VisualNOS = { link = "Visual" },
 
     WarningMsg = { fg = colors.main.warning },
 

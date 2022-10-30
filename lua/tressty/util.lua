@@ -10,6 +10,7 @@ local apply_highlights = function(highlights)
 	end
 end
 
+-- see colors in https://github.com/tressty/windows-terminal
 local function loadTerminal()
 	vim.g.terminal_color_0 = colors.black
 	vim.g.terminal_color_1 = colors.darkred
@@ -43,21 +44,19 @@ function util.load()
 	vim.opt.termguicolors = true
 	vim.g.colors_name = "tressty"
 
-	vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,a:Cursor/Cursor"
+	-- vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,a:Cursor/Cursor"
 
-	local exit_group = vim.api.nvim_create_augroup("tresstyExit", { clear = true })
-	vim.api.nvim_create_autocmd("ExitPre", {
-		command = "autocmd ExitPre * set guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20",
-		group = exit_group,
-	})
+	-- local exit_group = vim.api.nvim_create_augroup("tresstyExit", { clear = true })
+	-- vim.api.nvim_create_autocmd("ExitPre", {
+		-- command = "autocmd ExitPre * set guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20",
+		-- group = exit_group,
+	-- })
 
-	loadTerminal()
+	--TODO loadTerminal()
 
 	for _, highlight in pairs(theme) do
 		apply_highlights(highlight)
 	end
-
-	-- util.contrast()
 end
 
 return util
