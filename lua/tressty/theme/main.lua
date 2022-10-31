@@ -39,7 +39,7 @@ return {
 	Tag = { fg = colors.general.cyan },
 	Delimiter = { fg = colors.general.cyan },
 	SpecialComment = { link = "Comment" },
-	Debug = { fg = colors.general.magenta },
+	Debug = { fg = colors.general.purple },
 
 	Underlined = { fg = colors.general.turquoise, underline = true },
 	Ignore = { fg = colors.general.gray },

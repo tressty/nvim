@@ -29,7 +29,6 @@ local colors = {
 		red = "#F07178",
 		pink = "#FF9CAC",
 		purple = "#C792EA",
-		magenta = "#cc76e9",
 		gray = "#464b5d",
 		white = "#E2E2E2",
 		black = "#090B10",
@@ -41,11 +40,7 @@ local colors = {
 		sand = "#ffdd9f",
 		cantaloupe = "#fab49f",
 		pale_black = "#171825",
-		vermilion = "#ff5a49",
-	},
-	toxic = {
-		plum = "#9b117b",
-		crimson = "#d10020",
+		vermilion = "#ff776a",
 	},
 }
 
