@@ -14,7 +14,7 @@ Theme based on [Material theme](https://material-theme.com/) for [NeoVim](https:
 tressty.nvim is meant to be a fast and modern colorscheme written in Lua that supports a lot of the new features
 added to NeoVim like built-in [LSP](https://github.com/neovim/nvim-lspconfig) and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
-![Screenshot](https://raw.githubusercontent.com/Trard/additional_files/master/TresstyDeepOcean.png)
+![Screenshot](https://user-images.githubusercontent.com/68790724/199081425-3b3847db-86dd-476c-8d18-09a2dbcc2360.png)
 
 ## ⚡️ Requirements
 
