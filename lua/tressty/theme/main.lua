@@ -34,7 +34,7 @@ return {
 	Structure = { fg = colors.general.yellow },
 	Typedef = { fg = colors.general.orange },
 
-	Special = { fg = colors.additional.vermilion },
+	Special = { fg = colors.general.vermilion },
 	SpecialChar = { link = "Special" },
 	Tag = { fg = colors.general.cyan },
 	Delimiter = { fg = colors.general.cyan },

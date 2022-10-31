@@ -26,6 +26,7 @@ local colors = {
 		cyan = "#89DDFF",
 		yellow = "#FFCB6B",
 		orange = "#F78C6C",
+		vermilion = "#ff776a",
 		red = "#F07178",
 		pink = "#FF9CAC",
 		purple = "#C792EA",
@@ -40,7 +41,6 @@ local colors = {
 		sand = "#ffdd9f",
 		cantaloupe = "#fab49f",
 		pale_black = "#171825",
-		vermilion = "#ff776a",
 	},
 }
 

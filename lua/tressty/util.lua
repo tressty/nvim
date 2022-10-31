@@ -35,7 +35,7 @@ local function loadTerminal()
 	vim.g.terminal_color_7 = colors.general.white
 
 	vim.g.terminal_color_8 = colors.general.gray
-	vim.g.terminal_color_9 = colors.additional.vermilion
+	vim.g.terminal_color_9 = colors.general.red
 	vim.g.terminal_color_10 = colors.general.green
 	vim.g.terminal_color_11 = colors.general.yellow
 	vim.g.terminal_color_12 = colors.general.blue
