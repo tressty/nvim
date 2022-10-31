@@ -13,7 +13,7 @@ return {
 	CursorColumn = { link = "Cursor" },
 	CursorLine = { bg = colors.main.highlight },
 
-	Directory = { fg = colors.general.pink },
+	Directory = { fg = colors.general.blue },
 
 	DiffAdd = { fg = colors.general.green },
 	DiffChange = { fg = colors.general.blue },
