@@ -1,7 +1,7 @@
 local colors = require("tressty.colors")
 
 return {
-    GitSignsAdd    = { link = "DiffAdd" },
-    GitSignsChange = { link = "DiffChange" },
-    GitSingsDelete = { link = "DiffDelete" }
+    GitSignsAdd    = { link = "DiffAdded" },
+    GitSignsChange = { link = "DiffChanged" },
+    GitSingsDelete = { link = "DiffRemoved" }
 }
