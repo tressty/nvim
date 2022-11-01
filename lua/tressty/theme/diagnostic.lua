@@ -14,9 +14,9 @@ return {
 	DiagnosticVirtualTextHint = { link = "DiagnosticHint" },
 
 	DiagnosticUnderlineError = { undercurl = true, sp = colors.general.error },
-	DiagnosticUnderlineWarn = { undercurl = true,  sp = colors.general.vermilion },
-	DiagnosticUnderlineInfo = { undercurl = true,  sp = colors.additional.moon_light },
-	DiagnosticUnderlineHint = { undercurl = true,  sp = colors.general.purple },
+	DiagnosticUnderlineWarn  = { undercurl = true, sp = colors.general.vermilion },
+	DiagnosticUnderlineInfo  = { undercurl = true, sp = colors.additional.moon_light },
+	DiagnosticUnderlineHint  = { undercurl = true, sp = colors.general.purple },
 
     DiagnosticFloatingError = { link = "DiagnosticError" },
 	DiagnosticFloatingWarn = { link = "DiagnosticWarn" },
