@@ -5,5 +5,5 @@ return {
     healthError   = { link = "Error" },
     healthWarning = { link = "WarningMsg" },
     healthSuccess = { fg = colors.general.green },
-    healthHelp    = { link = "htmlLink" }
+    healthHelp    = { link = "Underlined" }
 }
