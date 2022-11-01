@@ -43,9 +43,9 @@ local colors = {
 		pale_black = "#171825",
 	},
     difference = {
-        added_background   = "#2a312b",
-        changed_background = "#20283c",
-        removed_background = "#311f28",
+        added_background   = "#252b28",
+        changed_background = "#1d2436",
+        removed_background = "#2a1d25",
         changed_highlight  = "#2c3753"
     }
 }
