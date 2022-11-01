@@ -15,10 +15,10 @@ return {
 
 	Directory = { fg = colors.general.blue },
 
-	DiffAdd = { bg = colors.general.green },
-	DiffChange = { bg = colors.general.blue },
-	DiffDelete = { bg = colors.general.red },
-	DiffText = { bg = colors.main.highlight },
+	DiffAdd = { bg = colors.difference.added_background },
+	DiffChange = { bg = colors.difference.changed_background },
+	DiffDelete = { bg = colors.difference.removed_background },
+	DiffText = { bg = colors.difference.changed_highlight },
 
 	EndOfBuffer = { link = "NonText" },
 	TermCursor = { link = "Cursor" },
