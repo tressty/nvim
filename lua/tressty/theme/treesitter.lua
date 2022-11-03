@@ -21,7 +21,7 @@ return {
 	["@string"] = { link = "String" },
 	["@string.regex"] = { fg = colors.general.cyan },
 	["@string.escape"] = { fg = colors.main.background, bg = colors.general.green },
-	["@string.special"] = { fg = colors.additional.cantaloupe },
+	["@string.special"] = { fg = colors.general.yellow },
 
 	["@character"] = { link = "Character" },
 	["@character.special"] = { link = "SpecialChar" },
@@ -71,7 +71,7 @@ return {
 	["@variable.builtin"] = { fg = colors.general.red },
 
 	["@constant"] = { fg = colors.additional.pale_turquoise }, -- see also https://github.com/nvim-treesitter/nvim-treesitter/issues/3610
-	["@constant.builtin"] = { fg = colors.general.cyan },
+	["@constant.builtin"] = { link = "@constant" },
 	["@constant.macro"] = { link = "Macro" },
 
 	["@namespace"] = { fg = colors.general.pink },
