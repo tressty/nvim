@@ -20,7 +20,7 @@ return {
 	-- Literals
 	["@string"] = { link = "String" },
 	["@string.regex"] = { fg = colors.general.cyan },
-	["@string.escape"] = { fg = colors.main.background, bg = colors.general.green },
+	["@string.escape"] = { fg = colors.additional.sand },
 	["@string.special"] = { fg = colors.general.yellow },
 
 	["@character"] = { link = "Character" },
