@@ -53,7 +53,7 @@ return {
 	["@debug"] = { link = "@keyword" },
 	["@label"] = { link = "Label" },
 	["@include"] = { link = "@keyword" },
-	["@exception"] = { link = "@keyword" },
+	["@exception"] = { link = "Exception" },
 
 	-- Types
 	["@type"] = { link = "Type" },
